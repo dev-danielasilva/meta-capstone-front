@@ -47,6 +47,7 @@ export default function Specials() {
           Specials
         </Typography>
         <Button
+          size={"large"}
           color={"primary"}
           variant="contained"
           sx={{

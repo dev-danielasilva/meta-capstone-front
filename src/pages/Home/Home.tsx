@@ -1,7 +1,8 @@
-import { Box, Container } from "@mui/material";
+import { Box } from "@mui/material";
 import Hero from "../../components/sections/Hero";
 import Specials from "../../components/sections/Specials";
 import Testimonials from "../../components/sections/Testimonials";
+import About from "../../components/sections/About";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <Hero />
       <Specials />
       <Testimonials />
-      {/* <About /> */}
+      <About />
     </Box>
   );
 }

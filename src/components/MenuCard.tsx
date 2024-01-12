@@ -23,7 +23,7 @@ export const MenuCard: FC<{ menuItem: IMenuItem }> = ({ menuItem }) => {
   return (
     <Card raised sx={{ maxWidth: 300, minHeight: 20 }}>
       <CardMedia sx={{ height: 250 }} image={image} title={label} />
-      <CardContent>
+      <CardContent sx={{ m: 1 }}>
         <Box
           sx={{
             display: "flex",
@@ -32,24 +32,25 @@ export const MenuCard: FC<{ menuItem: IMenuItem }> = ({ menuItem }) => {
             alignItems: "center",
           }}
         >
-          <Typography gutterBottom variant="h6">
+          <Typography gutterBottom variant="h6" fontWeight={"light"}>
             {label}
           </Typography>
           <Typography
             gutterBottom
-            variant="caption"
+            variant="body2"
             color={(theme) => theme.palette.warning.light}
+            fontWeight={"light"}
           >
             {price}
           </Typography>
         </Box>
-        <Typography variant="body1" mt={2}>
+        <Typography variant="body1" mt={2} fontWeight={"light"}>
           {description}
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions sx={{ m: 1 }}>
         <Button
-          size="small"
+          size="medium"
           color={"secondary"}
           sx={{ fontWeight: "bold" }}
           endIcon={<PersonIcon />}
