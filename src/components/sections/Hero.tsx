@@ -33,6 +33,7 @@ export default function Hero() {
               an authentic taste of Italy.
             </Typography>
             <Button
+              href="/reservations"
               color={"secondary"}
               variant={"contained"}
               size={"large"}
